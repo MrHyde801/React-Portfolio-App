@@ -4,7 +4,7 @@ const Experience = () => {
 
   const [exp, setExp] = useState([
     {
-      employer: "Sunrun Solar Homebuilder Designer",
+      employer: "Sunrun Solar, Homebuilder Designer",
       date: "June 2020 - Present",
       expList: [
         "Use AutoCAD and multiple design applications to calculate solar efficiency and design Solar arrays",
@@ -15,7 +15,7 @@ const Experience = () => {
       ] 
     } , 
     {
-      employer: "Vivint Solar CAD Technician",
+      employer: "Vivint Solar, CAD Technician",
       date: "June 2015 - May 2018",
       expList: [
         "Use AUTOCAD to quickly and efficently design solar panels on houses.",
@@ -42,9 +42,7 @@ const Experience = () => {
       expList: [
         "Greet visitors and operate entry transactions",
         "Manage a wide variety of customer service and administrative tasks to resolve visitor issues quickly and efficiently",
-        "Exercise sound judgement when enforcing park policies with uncooperative visitors",
-        "",
-        ""
+        "Exercise sound judgement when enforcing park policies with uncooperative visitors"
       ] 
     } ,
     {
@@ -74,24 +72,24 @@ const Experience = () => {
   return (
     <div className='container-fluid'>
           <div className='row sectionHead'>
-            <h2>Experience</h2>
+            <h2>Work Experience</h2>
             <div className='underline'></div>
           </div>
       {exp.map(data => {
         return (
         <>
           <div className='row employer'>
-            {data.employer}
+            <h5>{data.employer}</h5>
           </div>
-          <div className="row date">
+          <div className="row date px-3">
             {data.date}
           </div>
-          <ul className='row expList'>
-            <li>{data.expList[0]}</li>
-            <li>{data.expList[1]}</li>
-            <li>{data.expList[2]}</li>
-            {data.expList[3] && <li>{data.expList[3]}</li>}
-            {data.expList[4] && <li>{data.expList[4]}</li>}
+          <ul className='row expList px-5'>
+            {data.expList.map(item => {
+              return (
+                <li key={item} >{item}</li>
+              )
+            })}
           </ul>
         </>
         )

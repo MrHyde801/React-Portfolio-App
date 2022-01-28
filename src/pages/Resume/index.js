@@ -9,7 +9,7 @@ const Resume = () => {
 
     return (
         <div className="container-fluid d-flex">
-            <div className="col-3">
+            <div className="col-3 borderBlue">
             <Education />
             <Skills />
             </div>

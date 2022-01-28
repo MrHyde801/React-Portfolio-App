@@ -4,7 +4,7 @@ const Education = () => {
     const [edu, setEdu] = useState([
     {
         school: 'Utah Valley University',
-        certificate: 'Currently in sophmore year studying Computer Science'
+        certificate: 'Sophmore studying computer science'
     },
     {
         school: 'Orem High School',
@@ -25,10 +25,10 @@ const Education = () => {
           {edu.map(data => {
             return (
             <>
-              <div className='row school'>
+              <div className='row school px-4'>
                 {data.school}
               </div>
-              <div className="row cert">
+              <div className="row cert px-5 my-2">
                 {data.certificate}
               </div>
             </>

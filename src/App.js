@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from 'react';
-import Home from './pages/MainPage';
+import Home from './pages/Login';
 import Resume from './pages/Resume'
 import Bio from './pages/Bio'
 import Contact from './pages/Contact'
@@ -29,7 +29,7 @@ function Privates({user, Component}) {
 
 function App() {
 
-  const [lightMode, setLightMode] = useState(true)
+  const [lightMode, setLightMode] = useState(localStorage.getItem('light'));
   const [user, setUser] = useState(localStorage.getItem('user'));
 
   useEffect(() => {
@@ -39,6 +39,15 @@ function App() {
       localStorage.removeItem('user')
     }
   },[user])
+
+  useEffect(()=> {
+    if(lightMode) {
+      localStorage.setItem('light', lightMode)
+
+    } else {
+      localStorage.removeItem('light')
+    }
+  },[lightMode])
 
   const signIn = (email) => {
       setUser(email);
@@ -50,7 +59,7 @@ function App() {
 
 
   return (
-    <div className="App">
+    <div className={lightMode ? "App light" : "App dark"}>
       <LightContext.Provider value={{lightMode, setLightMode}}>
         <authContext.Provider value={{
           user,

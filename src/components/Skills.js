@@ -8,7 +8,7 @@ const Skills = () => {
     },
     {
         type: 'Front-end Development',
-        details: 'HTML, CSS, Javascript, Bootstrap'
+        details: 'HTML CSS, Javascript, Bootstrap'
     },
     {
         type: 'Back-End Development',
@@ -29,10 +29,10 @@ const Skills = () => {
         {skills.map(data => {
           return (
           <>
-            <div className='row type'>
+            <div className='row type px-4'>
               {data.type}
             </div>
-            <div className="row details">
+            <div className="row details px-5 my-2">
               {data.details}
             </div>
           </>

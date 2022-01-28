@@ -3,38 +3,37 @@ import React, {useState } from 'react';
 const ContactInfo = () => {
   const [contact, setContact] = useState([
     {
-        type: 'Address',
-        details: [
-          '351 N Main St',
+        types: 'Address',
+        detail: [
+          '351 N Main St, ',
           'Orem, Ut 84057'
         ]
     },
     {
-        type: 'Phone',
-        details: ['1-801-822-4456']
+        types: 'Phone',
+        detail: ['1-801-822-4456']
     },
     {
-        type: 'Email',
-        details: ['IanHyde801@gmail.com']
+        types: 'Email',
+        detail: ['IanHyde801@gmail.com']
     }
     ])
     
       return (
-        <div className='container-fluid'>
+        <div>
               <div className='row sectionHead'>
                 <h2>Contact Info</h2>
-                <div className='row underline'></div>
               </div>
           {contact.map(data => {
             return (
-            <>
-              <div className='row type'>
-                {data.type}
+            <div className="borderPatrol">
+              <div className='row types mx-2'>
+                {data.types}
               </div>
-              <div className="row details">
-                {data.details}
+              <div className="row detail mx-3">
+                {data.detail}
               </div>
-            </>
+            </div>
             )
           })}
         </div>

@@ -1,8 +1,9 @@
+import React from "react"
+import AboutMe from "../../components/AboutMe"
+
 const Bio = () => {
     return (
-        <div>
-            Bio Page     
-        </div>
+            <AboutMe />    
     )
 }
 

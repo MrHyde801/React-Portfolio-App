@@ -5,10 +5,10 @@ import ContactInfo from "../../components/ContactInfo"
 const Contact = () => {
     return (
         <div className="container-fluid d-flex flex-column align-items-center">    
-            <div className="row">
+            <div className="why">
                 <ContactInfo />
             </div>
-            <div className="row">
+            <div className="you">
                 <SocialMediaLinks />
             </div>
         </div>

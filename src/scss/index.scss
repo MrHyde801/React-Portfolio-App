@@ -6,23 +6,25 @@ $darkmeltedblue: #1E457B;
 
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Supermercado One', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
   background-position: top;
-  background: linear-gradient( $lightcomfyblue, white 18%);
   background-repeat: no-repeat;
-  
+  min-height: 200vh;
+  &.dark {
+  background: linear-gradient( $meltedBlue, black 8%);
+  color: white;
+  }
+  &.light {
+  background: linear-gradient( $lightcomfyblue, white 8%);
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-img {
+.profile {
   border-radius: 50%;
   height: 200px;
   width: 200px;
@@ -32,13 +34,121 @@ img {
 
 a {
   text-decoration: none;
-  color: black;
+  color:inherit;
+  background-color: $lightcomfyblue;
+  border-radius: 20px;
+  border: 2px solid $darkmeltedblue;
+  width: 10%;
+  display:flex;
+  justify-content: center;
 }
 
 a:hover {
-  color: $meltedBlue;
+  color: white;
+  background-color: $darkmeltedblue
 }
 
 .links {
-  border-bottom: 2px solid $lightcomfyblue;
+  border-bottom: 2px solid $darkmeltedblue;
+}
+
+.carousel-inner {
+  height: 500px;
+  width: 650px;
+}
+
+.borderBlue {
+  border-right: 2px solid $darkmeltedblue;
+}
+
+.imgCarousel {
+  object-fit: cover;
+}
+
+.underline {
+  background-color: $lightcomfyblue;
+  height: 6px;
+  width: 100px;
+  margin: 5px 14px;
+  padding-left: 20px;
+}
+
+.flex-column {
+  .row.sectionHead {
+    .underline {
+      width: 300px;
+    }
+  }
+}
+
+.wtf {
+  margin: 0 auto;
+}
+
+.carousel-control-prev {
+  margin-left: 10px;
+}
+
+iframe {
+  border: 2px solid $comfyblue;
+  border-radius: 20px;
+  margin: 40px 0;
+  box-shadow:  5px 5px 8px $comfyblue, 10px 10px 8px $meltedBlue, 15px 15px 8px $darkmeltedblue;
+  margin-bottom: 100px
+}
+
+.title {
+  color: $meltedBlue;
+  margin: 5px;
+  font-size: 24px;
+}
+
+.school {
+  color: $meltedBlue
+}
+
+.type {
+  color: $meltedBlue
+}
+
+.details {
+  color:$comfyblue
+}
+
+.types {
+  color: $meltedBlue
+}
+
+.detail {
+  color:$comfyblue
+}
+
+.date {
+  color: $comfyblue;
+}
+
+.expList {
+  color: $fadedgray
+}
+
+.borderPatrol {
+  border: 3px dashed $fadedgray
+}
+
+.why {
+  width: 40%;
+}
+
+.you {
+  width: 50%;
+}
+
+.col-6 {
+  height: 100px;
+  margin: 5px 0;
+  font-size: 40px;
+}
+
+.btn-primary, .btn-dark {
+  height: 40px;
 }
