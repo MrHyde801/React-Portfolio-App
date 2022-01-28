@@ -3,7 +3,7 @@ import Home from './pages/MainPage';
 import Resume from './pages/Resume'
 import Bio from './pages/Bio'
 import Contact from './pages/Contact'
-import Projects from './pages/Projects'
+import ProjectPage from './pages/Projects'
 import { Route, Routes, Navigate } from 'react-router-dom'//Makes it so we can have the multiple pages on a 1 page document. 
 import Header from './components/Header'
 import Navigation from "./components/Navigation"
@@ -64,7 +64,7 @@ function App() {
               <Route path="/bio" element={<Bio/>}/>
               <Route path="/resume" element={<Resume/>}/>
               <Route path="/projects"
-                element={<Privates user={user} Component={Projects} />}
+                element={<Privates user={user} Component={ProjectPage} />}
               />
               <Route path="/contact"
                 element={<Privates user={user} Component={Contact} />}

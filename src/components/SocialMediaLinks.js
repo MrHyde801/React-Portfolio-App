@@ -12,10 +12,10 @@ const SocialMediaLinks = () => {
                 <div className='row underline'></div>
             </div>
             <div className="row social-media">
-                <a href="https://www.linkedin.com/in/MrHyde801/" target="_blank"><FaLinkedin />LINKEDIN</a>
-                <a href="https://www.instagram.com/MrHyde801/" target="_blank"><FaInstagram />INSTAGRAM</a>
-                <a href="https://www.facebook.com/MrHyde801/" target="_blank"><FaFacebookSquare />FACEBOOK</a>
-                <a href="https://github.com/MrHyde801" target="_blank"><FaGithubSquare />GIT HUB</a>
+                <a className='d-flex justify-content-center align-item-center' href="https://www.linkedin.com/in/MrHyde801/" target="_blank"><FaLinkedin />LINKEDIN</a>
+                <a className='d-flex justify-content-center align-item-center' href="https://www.instagram.com/MrHyde801/" target="_blank"><FaInstagram />INSTAGRAM</a>
+                <a className='d-flex justify-content-center align-item-center' href="https://www.facebook.com/MrHyde801/" target="_blank"><FaFacebookSquare />FACEBOOK</a>
+                <a className='d-flex justify-content-center align-item-center' href="https://github.com/MrHyde801" target="_blank"><FaGithubSquare />GIT HUB</a>
             </div>
         </div>
     )

@@ -1,9 +1,12 @@
-const Projects = () => {
+import React from "react"
+import Projects from "../../components/Projects"
+
+const ProjectPage = () => {
     return (
         <div> 
-            My Projects    
+            <Projects />   
         </div>
     )
 }
 
-export default Projects
+export default ProjectPage
