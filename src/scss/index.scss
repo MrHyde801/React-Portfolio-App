@@ -1,0 +1,44 @@
+$fadedgray : #6e7885;
+$lightcomfyblue : #A5C3F2;
+$comfyblue: #8EB6F5;
+$meltedBlue: #3260A1;
+$darkmeltedblue: #1E457B;
+
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-position: top;
+  background: linear-gradient( $lightcomfyblue, white 18%);
+  background-repeat: no-repeat;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-position: 80% 15%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: $meltedBlue;
+}
+
+.links {
+  border-bottom: 2px solid $lightcomfyblue;
+}
