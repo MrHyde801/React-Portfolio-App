@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const Experience = () => {
 
-  const [exp, setExp] = useState([
+  const [exp] = useState([
     {
       employer: "Sunrun Solar, Homebuilder Designer",
       date: "June 2020 - Present",

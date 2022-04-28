@@ -1,7 +1,7 @@
 import React, {useState } from 'react';
 
 const ContactInfo = () => {
-  const [contact, setContact] = useState([
+  const [contact] = useState([
     {
         types: 'Address',
         detail: [

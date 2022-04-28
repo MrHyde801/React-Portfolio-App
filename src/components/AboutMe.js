@@ -5,10 +5,9 @@ import Amanda from "../image/Amanda.jpg"
 import Camping from "../image/camping.jpg"
 import Zions from "../image/Zions.jpg"
 import Coaching from "../image/coaching.jpg"
-import Lacrosse from "../video/Lacrosse.mp4"
 
 const AboutMe = () => {
-    const [bio, useBio] = useState([
+    const [bio] = useState([
         {
             description: [
                 'I was born an raised in Orem Utah. Growing up my parents threw me into every sport you can think of. I love competing and the sport I stuck with through high school and college is Lacrosse. Family is the most important thing to me. I have very close relationship to family. Last year I got married to my best friend and we adopted a beautiful lab/dobermen mix. I am currently a student at Utah Valley University studying computer science',

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const Education = () => {
-    const [edu, setEdu] = useState([
+    const [edu] = useState([
     {
         school: 'Utah Valley University',
         certificate: 'Sophmore studying computer science'
