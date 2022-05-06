@@ -7,25 +7,12 @@ import ProjectPage from './pages/Projects'
 import { Route, Routes, Navigate } from 'react-router-dom'//Makes it so we can have the multiple pages on a 1 page document. 
 import Header from './components/Header'
 import Navigation from "./components/Navigation"
+import Projects from './components/Projects';
 
 
 export const LightContext = createContext()
 export const authContext = createContext();
 
-function Privates({user, Component}) {
-    console.log(user)
-    if(user) {
-      return (
-        <Component />
-      )
-    } else {
-      return (
-      <Navigate
-        to={"/"}
-      />
-      )
-    }
-}
 
 function App() {
 
@@ -69,14 +56,13 @@ function App() {
             <Header />
             <Navigation />
             <Routes>
-              <Route exact path="/" element={<Home/>}/>
-              <Route path="/bio" element={<Bio/>}/>
+              <Route exact path="/" element={<Bio/>}/>
               <Route path="/resume" element={<Resume/>}/>
               <Route path="/projects"
-                element={<Privates user={user} Component={ProjectPage} />}
+                element={<Projects/>}
               />
               <Route path="/contact"
-                element={<Privates user={user} Component={Contact} />}
+                element={<Contact />}
               />
             </Routes>
           </authContext.Provider>

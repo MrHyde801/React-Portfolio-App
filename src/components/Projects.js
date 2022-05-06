@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Projects = () => {
-    const [projects, setProjects] = useState([
+    const [projects] = useState([
         {
             title: 'Trivia Game',
             description: 'First major group project, using only JavaScript created a trivia game, pulling the trivia questions and answers from an API',

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const Skills = () => {
-  const [skills, setskills] = useState([
+  const [skills] = useState([
     {
         type: 'Interpersonal',
         details: 'Independent and team oriented, Helpful team member, Outgoing and effective communicator, Project oriented, Knowledge seeker, Constructive trainer, Excellent customer service'
