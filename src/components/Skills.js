@@ -8,11 +8,11 @@ const Skills = () => {
     },
     {
         type: 'Front-end Development',
-        details: 'HTML CSS, Javascript, Bootstrap'
+        details: 'HTML, CSS, SCSS, Javascript, Bootstrap, Angular, Angular Material, React'
     },
     {
         type: 'Back-End Development',
-        details: 'Node'
+        details: 'Node, Firebase, PostgresSQL, MongoDB '
     },
     {
         type: 'Computive',

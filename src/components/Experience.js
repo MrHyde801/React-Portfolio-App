@@ -4,7 +4,7 @@ const Experience = () => {
 
   const [exp] = useState([
     {
-      employer: "Sunrun Solar, Homebuilder Designer",
+      employer: "Sunrun Solar, Homebuilder CAD Designer",
       date: "June 2020 - Present",
       expList: [
         "Use AutoCAD and multiple design applications to calculate solar efficiency and design Solar arrays",
