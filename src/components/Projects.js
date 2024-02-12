@@ -4,17 +4,17 @@ const Projects = () => {
     const [projects] = useState([
         {
             title: 'Trivia Game',
-            description: 'First major group project, using only JavaScript created a trivia game, pulling the trivia questions and answers from an API',
+            description: 'Uing only JavaScript, Me and 1 other student created a trivia game, pulling the trivia questions and answers from an API. You can select Categorie and based on difficulty it populates different questions.',
             link: "https://mrhyde801.github.io/TriviaAppProject-IanandIsaac/"
         },
         {
             title: 'Golf Scorecard',
-            description: 'Using Javascript, we pulled course information from an API and built a usable scorecard.',
+            description: 'Using Javascript, we pulled course information from an API with Heroku. and built a usable scorecard with yardages, and handicap. (Mtech pulled Heroku sub, API unusable at this moment. Aiming to be updated by end of month 2/12/24) ',
             link: "https://mrhyde801.github.io/GolfScoreCard/"
         },
         {
             title: 'To-do',
-            description: 'Our first Js lab,  we built a simple To Do List',
+            description: 'Our first Js lab back in fall 2021, I built a simple To Do List. Shows simple concepts but a fun reminder of where I started',
             link: "https://mrhyde801.github.io/toDoList/"
         },
         ])

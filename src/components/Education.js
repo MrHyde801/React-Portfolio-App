@@ -3,16 +3,16 @@ import React, {useState} from 'react';
 const Education = () => {
     const [edu] = useState([
     {
-        school: 'Utah Valley University',
-        certificate: 'Sophmore studying computer science'
+        school: 'Mountainland Technical College',
+        certificate: 'Web Development Certificate - May 2022'
+    },
+    {
+      school: 'Utah Valley University',
+      certificate: 'Pursuing Bachelors Degree of Computer Science'
     },
     {
         school: 'Orem High School',
         certificate: 'Diploma - May 2013'
-    },
-    {
-        school: 'Mountainland Technical College',
-        certificate: 'Web Development Certificate - May 2022'
     }
     ])
     

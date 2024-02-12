@@ -4,6 +4,16 @@ const Experience = () => {
 
   const [exp] = useState([
     {
+      employer: "Utah Valley Lacrosse Club, Assistant Coach/ Assistant Director of Operations",
+      date: "Fall 2023 - Present",
+      expList: [
+        "Assigned to film practices and Home games. Edit, breakdown, and upload film to our database so our team can study film and prepare each week for upcoming games",
+        "Since I am not assigned to a specific role, I was required to learn all on-field coaching roles and strategies. Because when a coach or coordinator is out for a practice or a game. I can plug in and coach with the same authority and effectiveness",
+        "I work player development on an individual basis. I get the opportunity to share my experience as a player to help them with their individual struggles with injuries, mental blocks, or poor performance",
+        "Work closely with the Director of Operations on projects, stat recording, and operating procedures for the administration of the team"
+      ] 
+    } , 
+    {
       employer: "Sunrun Solar, Homebuilder CAD Designer",
       date: "June 2020 - Present",
       expList: [
@@ -13,7 +23,7 @@ const Experience = () => {
         "Be adaptable and available to work on special projects in a timely and efficient manner",
         "Show great technical abiltiy to design according to county guidelines and accurately input customer and solar information into each design"
       ] 
-    } , 
+    } ,
     {
       employer: "Vivint Solar, CAD Technician",
       date: "June 2015 - May 2018",

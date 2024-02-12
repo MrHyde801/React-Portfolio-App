@@ -3,13 +3,6 @@ import React, {useState } from 'react';
 const ContactInfo = () => {
   const [contact] = useState([
     {
-        types: 'Address',
-        detail: [
-          '351 N Main St, ',
-          'Orem, Ut 84057'
-        ]
-    },
-    {
         types: 'Phone',
         detail: ['1-801-822-4456']
     },
