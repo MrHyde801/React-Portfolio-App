@@ -4,7 +4,7 @@ const Projects = () => {
     const [projects] = useState([
         {
             title: 'Trivia Game',
-            description: 'Uing only JavaScript, Me and 1 other student created a trivia game, pulling the trivia questions and answers from an API. You can select Categorie and based on difficulty it populates different questions.',
+            description: 'Uing only JavaScript, Me and 1 other student created a trivia game, pulling the trivia questions and answers from an API. You can select a Category and based on difficulty it populates different questions.',
             link: "https://mrhyde801.github.io/TriviaAppProject-IanandIsaac/"
         },
         {
